@@ -1,0 +1,589 @@
+/* fonts importing */
+@font-face {
+    font-family: "inter-light";
+    src: url(../fonts/Inter-Light.ttf);
+}
+@font-face {
+    font-family: "inter-regular";
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "inter-bold";
+    src: url(../fonts/Inter-bold.ttf);
+} 
+
+/* root */
+html{
+    font-size: 10px;
+    --main-blue-col:#35B8BE;
+    --secon-black-col:#08090A;
+    --main-blue-dark-col:#546285;
+    --link-col:#28224B;
+    --foter-bgc:#F5FBFC;
+}
+*{
+    font-family: "inter-regular";
+}
+.active{
+    color: var(--main-blue-col);
+}
+/* start header head section */
+.header-head{
+    background-color: var(--main-blue-col);
+    color: #ffffff;
+    font-size: 1.4rem;
+    height: 5vh;
+}
+.main-header{
+    height: 10vh;
+}
+.header-head a{
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+/* end header head section */
+
+/* start header main section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    margin-right: 2rem;
+    color: var(--link-col);
+    font-size: 1.5rem;
+    transition: .5s;
+}
+nav a:hover{
+    color: tomato;
+}
+i{
+    font-size: 2.5rem;
+}
+
+@media (max-width:992px) {
+    .main-header .container{
+        position: relative;
+    }
+    .main-header .container nav.active{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: flex !important;
+        flex-direction: column;
+        border: 1px solid #333;
+        padding: 3rem;
+        width: 100%;
+        background-color: #08090A;
+    }
+    .main-header .container nav a{
+        border: 1px solid #333;
+        padding: 2rem;
+        background-color: #08090A;
+        width: 100%;
+        color: #ffffff;
+    }
+}
+/* end header main section */
+
+/* start main section */
+main{
+    margin-top: 10rem;
+}
+main .text h1{
+   font-size: 4rem;
+   color: var(--secon-black-col);
+   font-family: "inter-bold";
+}
+main .text span{
+    font-size: 4rem;
+    color: var(--main-blue-col);
+    font-family: "inter-bold";
+}
+main .text p{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--main-blue-dark-col);
+}
+main .text a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: var(--main-blue-col);
+    color: #ffffff;
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+main .text a:hover{
+    background-color: transparent;
+    color: var(--secon-black-col);
+}
+main .text .feed{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+main .text p span{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+/* end main section */
+
+/* start prod section */
+.prod{
+    margin-top: 15rem;
+}
+.prod .text h1{
+    font-size: 4rem;
+    color: var(--main-blue-col);
+    font-family: "inter-bold";
+}
+.prod .text p{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--main-blue-dark-col)
+}
+.prod .text a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: var(--main-blue-col);
+    color: #ffffff;
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+.prod .text a:hover{
+    background-color: transparent;
+    color: var(--secon-black-col);
+}
+/* end prod section */
+
+/* start working section */
+.working{
+    margin-top: 10rem;
+}
+.working .title h1{
+    font-size: 4rem;
+    color: var(--main-blue-col);
+    font-family: "inter-bold";
+}
+.working .container .work .text h4{
+    font-size: 2.5rem;
+    color: var(--secon-black-col);
+    font-family: "inter-bold";
+    text-align: center;
+}
+.working .container .work .text p{
+    font-size: 1.8rem;
+    color: var(--main-blue-dark-col);
+    text-align: center;
+}
+.working .container .work{
+    padding: 1.5rem;
+}
+/* end working section */
+
+/* start menu section */
+.menu{
+    margin-top: 15rem;
+}
+.menu .title h1{
+    font-size: 4rem;
+    color: var(--main-blue-col);
+    font-family: "inter-bold";
+}
+.menu .title p{
+    font-size: 1.8rem;
+    color: var(--main-blue-dark-col);
+}
+.menu .title p a{
+    color: var(--main-blue-col);
+}
+.menu .title .links{
+    margin-top: 2rem;
+}
+.menu .title .links button{
+    margin-left: 2rem;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    border: 1px solid #617283;
+    color: var(--secon-black-col);
+    transition: .5s;
+}
+.menu .title .links button.main-btn{
+    background-color: var(--main-blue-col);
+    color: #fff;
+    border: none;
+}
+.menu .title .links button:hover{
+    background-color: var(--main-blue-col);
+}
+.menu .counts{padding: 1.5rem 3rem;display: flex;gap: 2rem;align-items: center;background-color: transparent;border-radius: 2rem;border: 1px solid silver;width: fit-content;font-size: 1.5rem;color: var(--secon-black-col);}
+.menu .counts i{
+    cursor: pointer;
+    color: var(--secon-black-col);
+}
+.menu .counts .fa-minus{
+    color: silver;
+}
+.content button{
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    background-color: var(--main-blue-col);
+    font-size: 1.5rem;
+    color: var(--foter-bgc);
+    border: none;
+    transition: .5s;
+}
+.food{
+    position: relative;
+    border: 2px solid #08090a5c;
+    padding:2rem;
+    width: fit-content;
+    width: 500px;
+    height:300px;
+}
+@media (max-width:500px) {
+    .food{
+        width: 300px !important;
+        margin: auto;
+        object-fit: cover;
+    }
+}
+.food .text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.food .text span:nth-of-type(1){
+    color: var(--secon-black-col);
+    font-size: 2.5rem;
+    font-family: "inter-bold";
+}
+.food .text span:nth-of-type(2){
+    color: var(--main-blue-col);
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 6rem;
+}
+.food p{
+    font-size: 1.8rem;
+    color: var(--main-blue-dark-col);
+    margin-top: 1rem;
+    text-align: center;
+}
+.food .cart{
+    margin-left: 6rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+}
+.food .cart span{
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: var(--secon-black-col);
+    border: 1px solid #08090a58;
+}
+.food .cart a{
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background-color: var(--main-blue-col);
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.food .cart a:hover{
+    background-color: transparent;
+    color: var(--secon-black-col);
+}
+.menu .hero-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.menu .hero-link a{
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background-color: var(--main-blue-col);
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.menu .hero-link a:hover{
+    background-color: transparent;
+    color: var(--secon-black-col);
+}
+/* end menu section */
+@media (max-width:500px) {
+    html{
+        font-size: 6px;
+    }
+}
+
+/* start online section */
+.online{
+    margin-top: 10rem;
+}
+.online .text h1{
+    font-size: 4rem;
+    color: var(--main-blue-col);
+    font-family: "inter-bold";  
+}
+.online .text p{
+    font-size: 2rem;
+    color: var(--main-blue-dark-col);
+    margin-top: 2rem;
+}
+.online .text a{
+    display: inline-block;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background-color: var(--main-blue-col);
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.online .text a:hover{
+    background-color: transparent;
+    color: var(--secon-black-col);
+}
+
+@media (max-width:600px) {
+   .on-img{
+    width: 250px;
+    object-fit: cover;
+   }
+}
+/* end online section */
+
+/* start coffe section */
+.coffe{
+    margin-top: 15rem;
+}
+.coffe .text h1{
+   font-size: 4rem;
+   color: var(--secon-black-col);
+   font-family: "inter-bold";
+}
+.coffe .text span{
+    font-size: 4rem;
+    color: var(--main-blue-col);
+    font-family: "inter-bold";
+}
+.coffe .text p{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--main-blue-dark-col);
+}
+.coffe .text a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: var(--main-blue-col);
+    color: #ffffff;
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+.coffe .text a:hover{
+    background-color: transparent;
+    color: var(--secon-black-col);
+}
+.coffe .text .feed{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+.coffe .text p span{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+@media (max-width:500px) {
+    .container{
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .coffe img{
+        width: 250px;
+        object-fit: cover;
+    }
+}
+/* end coffe section */
+
+/* start support section */
+.support{
+    margin-top: 15rem;
+}
+.support .img{
+    margin-right: 20rem;
+}
+.support .content{
+    position: relative;
+    margin-left: 8rem;
+}
+.support .content .img{
+    width: 100%;
+    height: 100%;
+}
+.support .content a{
+    position: absolute;
+    right: 70%;
+    top: 80%;
+    transform: translate(50%,50%);
+    padding: 1.5rem 2.5rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: var(--main-blue-col);
+    transition: .5s;
+}
+.support .content a:hover{
+    background-color: transparent;
+    color: var(--secon-black-col);
+}
+
+@media (max-width:1350px) {
+    .support{
+        display: none;
+    } 
+}
+/* end support section */
+
+/* start footer section */
+footer{
+    background-color: var(--foter-bgc);
+    padding: 5rem;
+    width: 100%;
+}
+footer .row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    padding-bottom: 8rem;
+    border-bottom: 2px solid #7E828F;
+}
+footer .row1 .first-sec{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer .row1 .first-sec p{
+    font-size: 1.8rem;
+    color: var(--main-blue-dark-col);
+}
+footer .row1 .sec-sec{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    text-align: start;
+}
+footer .row1 .sec-sec nav h4{
+    font-size: 2rem;
+    font-family: "inter-bold";
+    color: var(--secon-black-col);
+}
+footer .row1 .sec-sec nav a{
+    font-size: 1.5rem;
+    color: var(--main-blue-dark-col);
+    transition: .5s;
+}
+footer .row1 .sec-sec nav a:hover{
+    color: tomato;
+}
+footer .row2{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .row2 .text h5{
+    font-size: 1.4rem;
+    color: var(--secon-black-col);
+}
+footer .row2 .text h5 a{
+    color: var(--main-blue-col);
+}
+footer .row2 .icons{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+footer .row2 .icons i{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #7E828F;
+    transition: .5s;
+}
+footer .row2 .icons i:hover{
+    transform: rotate(360deg);
+}
+/* end footer section */
+
+/* start basket section */
+.basket{
+    position: absolute !important;
+    top: 5vh;
+    left: 0vh;
+    width: fit-content;
+    min-height: 120vh;
+    z-index: 9999999;
+    background-color: #fff;
+    transform: translateX(-100%);
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    padding: 2rem;
+}
+@keyframes transformmm{
+    0%{
+        transform: translateX(-100%);
+        display: none;  
+    }
+    100%{
+        transform: translateX(0%);
+        display: flex;  
+    }
+}
+
+@keyframes transformmm2{                
+    0%{
+        transform: translateY(0%);
+        display: block;
+    }
+    100%{
+        transform: translateX(-100%);
+        display: none;
+        left: 0;
+    }
+}
+/* end basket section */
